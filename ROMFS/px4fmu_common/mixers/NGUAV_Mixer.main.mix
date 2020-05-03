@@ -1,0 +1,33 @@
+# "Next-Gen UAV" custom 4-rotor VTOL Configuration Mixer, by Michael Gunderman
+
+# Motors
+R: 4x 10000 10000 10000 0
+
+Tilt mechanism servo mixer
+---------------------------
+#RIGHT up:2000 down:1000
+M: 2
+S: 1 4      0 -20000  10000 -10000  10000     #I think this is the VTOL switch. I think the "4" refers to the vtol control. If that's not the case, then swap 4's and 2's.
+
+Aileron Mizer
+-------------					#This is a donation from the Standard VTOL aircraft configuration. Check the inputs?
+M: 1
+S: 1 0   10000   10000    0 -10000  10000		#I think the second digit, "0" refers to roll control
+
+Elevator mixers
+-------------
+M: 1
+S: 1 1   10000   10000    0 -10000  10000		#I think the second digit, "1" refers to the pitch control.
+
+Rudder Mixers
+-------------
+M: 1
+S: 1 2   10000   10000    0 -10000  10000		#I think the second digit, "2" refers to yaw control
+
+
+# I think this is the order of inputs referenced in column two of each statement: "S: 1 1   10000   10000    0 -10000  10000"
+#0: Roll
+#1: Pitch
+#2: Yaw
+#3: Throttle
+#4: VTOL control
