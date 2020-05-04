@@ -6,7 +6,7 @@ R: 4x 10000 10000 10000 0
 Tilt mechanism servo mixer
 ---------------------------
 #RIGHT up:2000 down:1000
-M: 2
+M: 1
 S: 1 4      0 -20000  10000 -10000  10000     #I think this is the VTOL switch. I think the "4" refers to the vtol control. If that's not the case, then swap 4's and 2's.
 
 Aileron Mizer
